@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Mouse Maze</title>
+  <link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body> 
+	<div id="message">
+		Ready to start
+	</div>
+	<div id="maze" onmouseout="cursorOutside(event, this)">
+		<div id="start" class="place" onmouseover="startGame()">START</div>
+		<div id="finish" class="place" onmouseover="winGame()">FINISH</div>
+		<div class="block" 
+		     style="top: 50px; left: 0px; width: 200px; height: 50px;"
+		     onmouseover="loseGame(this)">
+		</div>
+		<div class="block" 
+		     style="top: 0px; left: 220px; width: 200px; height: 300px;"
+		     onmouseover="loseGame(this)">
+		</div>
+		<div class="block" 
+		     style="top: 120px; left: 10px; width: 210px; height: 300px;"
+		     onmouseover="loseGame(this)">
+		</div>
+		<div class="block" 
+		     style="top: 350px; left: 250px; width: 120px; height: 150px;"
+		     onmouseover="loseGame(this)">
+		</div>
+	</div>
+</body>
+</html>
